@@ -1,3 +1,4 @@
+import { style } from '@angular/animations';
 import {Component} from '@angular/core'
 
 @Component({
@@ -5,4 +6,11 @@ import {Component} from '@angular/core'
     templateUrl: './server.component.html'
 })
 
-export class ServerComponent{}
+export class ServerComponent{
+    serverStatus : string = 'Offline';
+    serverID: number = 10;
+
+    getServerStatus(){
+        return this.serverStatus;
+    }
+}
