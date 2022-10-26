@@ -7,6 +7,7 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { WarningComponent } from './warning/warning.component';
 import { AlarmComponent } from './alarm/alarm.component';
+import { AppleComponent } from './apple/apple.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AlarmComponent } from './alarm/alarm.component';
     ServerComponent, 
     ServersComponent,
     WarningComponent,
-    AlarmComponent
+    AlarmComponent,
+    AppleComponent
   ],
   imports: [
     BrowserModule,
