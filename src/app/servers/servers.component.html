@@ -21,8 +21,8 @@ class="btn btn-primary"
     <p>No server was created</p>
 </ng-template>
 <hr>
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers; let i = index;"></app-server>
+
 
 
  

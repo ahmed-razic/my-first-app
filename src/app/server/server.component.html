@@ -1,5 +1,9 @@
 <div>
-    <p>{{'Server'}} with ID {{serverID}} has status {{getServerStatus()}}</p>
+    <p 
+        [ngStyle]="{'background-color': getColor()}"
+        [ngClass]="{online: serverStatus === 'online'}">
+        {{'Server'}} with ID {{serverID}} has status {{getServerStatus()}}
+    </p>
 </div>
 
 <!-- <p>{{serverID ? 'true' : 'false'}}</p>
